@@ -2,6 +2,7 @@ const express = require('express');
 const tasks = require('./routes/tasks');
 const connectDB = require('./db/connection');
 const notFound = require('./middleware/notFound');
+const errorHandler = require('./middleware/error')
 const app = express();
 app.use(express.json());
 
@@ -13,6 +14,7 @@ app.get('/hello',(req,res)=>{
 })
 app.use('/api/v1/tasks',tasks);
 app.use(notFound);
+app.use(errorHandler);
 
 /*app.get('/api/v1/tasks',(req,res))
 app.post('/api/v1/tasks',(req,res))

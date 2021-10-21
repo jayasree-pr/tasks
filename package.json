@@ -1,17 +1,26 @@
 {
-  "name": "task",
+  "name": "TASK",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^6.0.11",
     "nodemon": "^2.0.13"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayasree-pr/tasks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayasree-pr/tasks/issues"
+  },
+  "homepage": "https://github.com/jayasree-pr/tasks#readme"
 }
